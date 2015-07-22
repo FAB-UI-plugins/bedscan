@@ -105,7 +105,7 @@ baud = 115200
 serial = serial.Serial(port, baud, timeout=0.6)
 serial.flushInput()
 
-macro("M741","TRIGGERED",2,"Front panel door control",1, verbose=False)	
+#macro("M741","TRIGGERED",2,"Front panel door control",1, verbose=False)	
 macro("M402","ok",2,"Retracting Probe (safety)",1, warning=True, verbose=False)	
 macro("G27","ok",100,"Homing Z - Fast",0.1)	
 
